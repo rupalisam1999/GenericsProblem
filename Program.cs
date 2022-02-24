@@ -6,7 +6,10 @@ namespace GenericsProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to GenericsProblem");
+
+            int maxIntNumber = MaximumNumberCheck.maximumIntegerNumber(500, 700, 600);
+            Console.WriteLine(maxIntNumber);
         }
     }
 }
