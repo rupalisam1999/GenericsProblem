@@ -9,8 +9,9 @@ namespace GenericsProblem
             Console.WriteLine("Welcome to GenericsProblem");
 
 
-           double maximumFloateNumber = MaximumNumberCheck.maximumFloateNumber(1.5, 2.5, 3.5);
-            Console.WriteLine(maximumFloateNumber);
+
+           string  maximumStringNumber = MaximumNumberCheck.maximumStringNumber("Apple", "peach", "Banana");
+            Console.WriteLine(maximumStringNumber);
         }
     }
 }

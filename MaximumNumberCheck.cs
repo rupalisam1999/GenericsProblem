@@ -24,7 +24,8 @@ namespace GenericsProblem
             }
 
         }
-        public static double maximumFloateNumber(double firstValue, double secondValue, double thirdValue)
+        
+        public static string maximumStringNumber(string firstValue, string secondValue, string thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
             {
