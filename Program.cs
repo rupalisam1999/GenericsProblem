@@ -8,8 +8,9 @@ namespace GenericsProblem
         {
             Console.WriteLine("Welcome to GenericsProblem");
 
-            int maxIntNumber = MaximumNumberCheck.maximumIntegerNumber(500, 700, 600);
-            Console.WriteLine(maxIntNumber);
+
+           double maximumFloateNumber = MaximumNumberCheck.maximumFloateNumber(1.5, 2.5, 3.5);
+            Console.WriteLine(maximumFloateNumber);
         }
     }
 }
