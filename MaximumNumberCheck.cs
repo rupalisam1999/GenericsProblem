@@ -8,38 +8,26 @@ namespace GenericsProblem
 {
     class MaximumNumberCheck
     {
-        public static int maximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+        public static T findMaximum<T>(T firstValue, T secondValue, T thirdValue) where T : IComparable
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
+                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
+                firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) >= 0)
             {
                 return firstValue;
             }
-            else if (secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) > 0)
+            else if (secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) > 0 ||
+                 secondValue.CompareTo(thirdValue) >= 0 && secondValue.CompareTo(firstValue) > 0 ||
+                 secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) >= 0)
             {
                 return secondValue;
             }
-            else
-            {
-                return thirdValue;
-            }
-
-        }
-        
-        public static string maximumStringNumber(string firstValue, string secondValue, string thirdValue)
-        {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-            {
-                return firstValue;
-            }
-            else if (secondValue.CompareTo(thirdValue) > 0 && secondValue.CompareTo(firstValue) > 0)
-            {
-                return secondValue;
-            }
-            else
+            else (thirdValue.CompareTo(secondValue) > 0 && thirdValue.CompareTo(firstValue) > 0 ||
+                thirdValue.CompareTo(secondValue) >= 0 && thirdValue.CompareTo(firstValue) > 0 ||
+                thirdValue.CompareTo(secondValue) > 0 && thirdValue.CompareTo(firstValue) >= 0)
             {
                 return thirdValue;
             }
         }
-
     }
 }

@@ -10,8 +10,7 @@ namespace GenericsProblem
 
 
 
-           string  maximumStringNumber = MaximumNumberCheck.maximumStringNumber("Apple", "peach", "Banana");
-            Console.WriteLine(maximumStringNumber);
+          
         }
     }
 }
